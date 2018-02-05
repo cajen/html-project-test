@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<script src="myScript1.js"></script>
+<head>
+	<style type="text/css">
+		#consent {
+			color: green;
+		}
+		img {
+			width: 100px;
+			height: 100px;
+		}
+		table {
+			margin: 0;
+			padding: 30px;
+			width: 100%;
+			border: solid black;
+			border-collapse: collapse;
+		}
+		td {
+			border: solid red;
+			text-align: center;
+		}
+		#info {
+			display: none;
+		}
+	</style>
+	
+	<title></title>
+</head>
+<body>
+
+<div id="consent">Do you consent?<br>
+ 	<button onclick="clickConsent();">Continue</button>
+</div>
+
+<div id="instructions" style="display:none;">These are the instructions. 
+	<br>
+	<button onclick="clickInstructions();">continue again</button>
+</div>
+
+<form id="info" name="myForm"  onsubmit="return validationForm()" method="post">
+	First name: <input type="text" name="fname"><br>
+	Last name: <input type="text" name="lname"><br>
+	<input type="submit" name="Submit">
+</form> 
+	
+</div>
+
+<div id="trial" style="display:none;">
+	<table>
+		<tr>
+			<td><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BNGNiNWQ5M2MtNGI0OC00MDA2LWI5NzEtMmZiYjVjMDEyOWYzXkEyXkFqcGdeQXVyMjM4NTM5NDY@._V1_UY1200_CR90,0,630,1200_AL_.jpg">
+				<br>
+			Title: 
+			<br>
+			Description</td>
+			<td><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BNGNiNWQ5M2MtNGI0OC00MDA2LWI5NzEtMmZiYjVjMDEyOWYzXkEyXkFqcGdeQXVyMjM4NTM5NDY@._V1_UY1200_CR90,0,630,1200_AL_.jpg">
+				<br>
+			Title: 
+			<br>
+			Description
+			<br>
+		</td>
+		</tr>
+	</table>
+	
+	<br>
+	<input style="width: 100%" type="range" >
+</div>
+</body>
+</html>
